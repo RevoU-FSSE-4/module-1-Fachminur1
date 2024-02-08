@@ -1,0 +1,30 @@
+body {
+    background-color: grey;
+}
+
+header {
+text-align: center;
+padding-left: 40%;
+padding-right: 40%;
+}
+
+
+.question {
+    padding: 5% 5% 5% 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10%;
+    text-align: center;
+}
+
+.question1, .question2, .question3 {
+    display: grid;
+    border: 0.12em solid rgb(10, 10, 10);
+}
+
+.pictures {
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10%;
+}
