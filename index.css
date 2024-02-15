@@ -1,11 +1,41 @@
 body {
     background-color: grey;
 }
+.navigationbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 10px 0px;
+
+}
+
+.lefttnavigationbar {
+    display: flex;
+    column-gap: 5px;
+}
+
+.leftnavigationbar a, .rightnavigationbar a {
+    padding: 10px;  
+    background-color: #333;
+    text-decoration: underline;
+    color: white;
+    
+}
+
+.leftnavigationbar a:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+
+.rightnavigationbar a:hover {
+    background-color: grey;
+    cursor: pointer;
+}   
 
 header {
 text-align: center;
-padding-left: 40%;
-padding-right: 40%;
 }
 
 
@@ -27,4 +57,62 @@ padding-right: 40%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10%;
+}
+
+@media only screen and (min-width: 600px) {
+    .icon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .leftnavigationbar, .rightnavigationbar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 799px) {
+    .pictures {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+
+@media only screen and (max-width : 799px) {
+
+    .pictures {
+        display: grid;
+        grid-template-columns: 3;
+        padding-bottom: 200px;
+
+    }
+
+
+    .picture1 {
+        margin: auto;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        grid-row: 1;
+        grid-column: 2;
+    }    
+
+    .picture2 {
+        margin: auto;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        grid-row: 2;
+        grid-column: 2;
+    }    
+
+    .picture3 {
+        margin: auto;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        grid-row: 3;
+        grid-column: 2;
+    }    
 }
