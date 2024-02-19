@@ -28,9 +28,8 @@
 >   After the creation of the website is done. The next step is to push the project to GITHUB as remote directory which we can access all the time. You can use these following commands in the terminal:
 *git add .*
 *git commit -m "yourmessage"*
-*git push main origin*
+*git push origin main*
 ![Step3](./assets/step3.png)
-
 
 ##Deployment
 
